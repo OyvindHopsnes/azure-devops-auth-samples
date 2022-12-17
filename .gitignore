@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
@@ -18,3 +18,5 @@ app.Debug.config
 app.Release.config
 
 TestResults/
+JavascriptWebAppSample/node_modules/
+JavascriptWebAppSample/package-lock.json
