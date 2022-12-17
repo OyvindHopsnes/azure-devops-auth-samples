@@ -19,7 +19,9 @@ function callApiWithToken(endpoint, token, callback) {
         .then(response => response.json())
         .then(response => {
             logMessage('Web API responds:');
-            logMessage(JSON.stringify(response.value[0], null, 4));
+            response.value.forEach((val) => {
+                logMessage(JSON.stringify(val, null, 4));                
+            });
         }).catch(error => {
             console.error(error);
         });
