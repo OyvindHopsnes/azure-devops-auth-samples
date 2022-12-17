@@ -7,8 +7,8 @@
 
 const msalConfig = {
     auth: {
-        clientId: "Enter_the_Application_Id_Here", // This is the ONLY mandatory field that you need to supply.
-        authority: "https://login.microsoftonline.com/Enter_the_Tenant_Info_Here", // Defaults to "https://login.microsoftonline.com/common"
+        clientId: "cc71d23d-571c-400f-9559-471e980853a6", // This is the ONLY mandatory field that you need to supply.
+        authority: "https://login.microsoftonline.com/f2ec7188-d455-4a3e-be2d-64b9b07533c2", // Defaults to "https://login.microsoftonline.com/common"
         redirectUri: "http://localhost:8081", // You must register this URI on Azure Portal/App Registration. Defaults to window.location.href
         postLogoutRedirectUri: "http://localhost:8081", // Simply remove this line if you would like navigate to index page after logout.
         navigateToLoginRequestUrl: false, // If "true", will navigate back to the original request location before processing the auth code response.
@@ -44,7 +44,8 @@ const msalConfig = {
 
 // Add here the endpoints for services you would like to use.
 const apiConfig = {
-    endpoint: "https://dev.azure.com/msaltestingjs/_apis/projects?api-version=4.0",
+//
+    endpoint: "https://dev.azure.com/sensio/_apis/projects?api-version=7.1-preview.4",
     scopes: ["499b84ac-1321-427f-aa17-267ca6975798/.default"] // do not change this value
 };
 
